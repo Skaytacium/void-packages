@@ -22,6 +22,6 @@ do_install() {
 	vlicense LICENSE
 
 	vmkdir /etc/php8.2/conf.d
-	printf 'extension=%s\n' phar iconv openssl zip \
+	printf 'extension=%s\n' phar iconv openssl zip curl \
 		>${DESTDIR}/etc/php8.2/conf.d/composer.ini
 }
